@@ -1,3 +1,3 @@
 # recommenderSystem
 
-# this is a recommender system developed using apache spark & python
+# This is a recommender system developed using music streaming data, stack used: apache spark & python

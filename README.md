@@ -7,4 +7,4 @@ Personal data are becoming harder to retrieve and the latest regulations (i.e. G
 Our experience showed that it’s possible to create very accurate user profiles (also for an anonymous user identified only by a random ID) exploiting the implicit feedbacks.
 
 
-Stack used: Apache Spark & Python3
+Stack used: Apache Spark, Python3, Flask, conda, apache-airflow, bs4, frozendict, geopy, ipython==5.0, kafka-python, matplotlib, numpy, py4j, pyelasticsearch, pymongo, requests, scipy, selenium, sklearn, tabulate, tldextract, wikipedia, findspark, iso8601, notebook==5.0.0, beautifulsoup4, networkx, jupyter, nltk, gensim, futures, deepwalk, tornado==4.5.3

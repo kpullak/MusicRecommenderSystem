@@ -5,9 +5,6 @@
 # For this project, I created a recommender system that would recommend new musical artists to a user based on their listening history. Suggesting different songs or musical artists to a user is important to many music streaming services, such as Pandora and Spotify. In addition, this type of recommender system could also be used as a means of suggesting TV shows or movies to a user (e.g., Netflix). 
 # 
 # To create this system I used Spark and the collaborative filtering technique. 
-# **Submission Instructions:** 
- 
-# ## Datasets
 # 
 # I have used publicly available song data from audioscrobbler, which can be found [here](http://www-etud.iro.umontreal.ca/~bergstrj/audioscrobbler_data.html). However, I modified the original data files so that the code would run in a reasonable time on a single machine.
 
@@ -141,7 +138,8 @@ def modelEval(model, dataset):
         upon = upon+score
     print(upon/float(len(users_list)))    
 
-    
+
+# Performing Model Sweep to fine tune parameters, to get the best fit    
 # ### Model Construction
     
 rankList = [2,10,20]
@@ -149,11 +147,9 @@ for rank in rankList:
     model = ALS.trainImplicit(trainData, rank , seed=345)
     modelEval(model,validationData)
     
-    
-    
+        
 bestModel = ALS.trainImplicit(trainData, rank=10, seed=345)
 modelEval(bestModel, testData) 
-
 
 
 # ## Trying Some Artist Recommendations

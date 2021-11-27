@@ -1,8 +1,7 @@
 # Project Details
 
 # Title: 
-Music Recommender System using Collaborative Filtering on implicit feedback data
-(This is work done for one of class projects for graduate level course - CS 591 Algorithms for Data Guided Business Intelligence).
+Music Recommender System using Collaborative Filtering on implicit feedback data. \This is work done for one of class projects for graduate level course - CS 591 Algorithms for Data Guided Business Intelligence.
 
 In this class project, built a Music Recommender System model using Collaborative Filtering on implicit feedback data.
 
